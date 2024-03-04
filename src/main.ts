@@ -36,4 +36,4 @@ export const productos: LineaTicket[] = [
 ];
 
 console.log(calculaTicket(productos));
-console.log(calculaLineaTicket(productos));
+//console.log(calculaLineaTicket(productos));

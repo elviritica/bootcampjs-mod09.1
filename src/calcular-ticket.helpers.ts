@@ -226,9 +226,9 @@ export const calculaTicket = (lineasTicket: LineaTicket[]) : TicketFinal => {
         desgloseIva: []
     };
 
-    for (let i = 0; i < lineasTicket.length; i++) {
-        resultado.lineas = calculaLineaTicket(lineasTicket);
-    }
+  
+    resultado.lineas = calculaLineaTicket(lineasTicket);
+    
 
     resultado.total = calculaTotalconIvayTotalsinIva(resultado.lineas);
     resultado.desgloseIva = calculaDesgloseIva(resultado.lineas);
